@@ -1,5 +1,5 @@
 # ASP.NET Core
-- task: UseDotNet@2
+ task: UseDotNet@2
   inputs:
     packageType: 'sdk'
     version: 
@@ -7,15 +7,15 @@
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
-- trigger:
+trigger:
 - develop
 - feature/*
 - master
 
-- pool:
+pool:
   name: 'Demo'
 
-- variables:
+variables:
   buildConfiguration: 'Release'
   dotNetFramework: 'net6.0'
   repository: 'walmartpayment'
