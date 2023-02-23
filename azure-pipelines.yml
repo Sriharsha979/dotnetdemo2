@@ -12,10 +12,10 @@
 - feature/*
 - master
 
-pool:
+- pool:
   name: 'Demo'
 
-variables:
+- variables:
   buildConfiguration: 'Release'
   dotNetFramework: 'net6.0'
   repository: 'walmartpayment'
